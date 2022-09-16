@@ -1,0 +1,100 @@
+{
+  "title": "JSON格式校验器",
+  "checkResult": {
+    "needInput": "请先往文本框里塞点什么吧~",
+    "noProblem": "目测您的JSON目前没有什么问题喵~",
+    "noProblemSchemaLoading": "您的JSON格式没有什么问题，等JSON Schema加载好后就为您继续检测喵~",
+    "haveProblem": "您的JSON还是有点问题的。"
+  },
+  "codeArea": {
+    "placeHolder": "JSON请往这里塞~"
+  },
+  "loadSchema": {
+    "button": "加载 Schema",
+    "prompt": "JSON Schema URL"
+  },
+  "errorMessage": {
+    "parseError": {
+      "InvalidSymbol": "这是什么？",
+      "InvalidNumberFormat": "这里数字格式不对。",
+      "PropertyNameExpected": "这是键值对，请填写键名。",
+      "ValueExpected": "东西呢？",
+      "ColonExpected": "这是键值对，键名后面要加冒号。",
+      "CommaExpected": "逗号分隔符呢？",
+      "CloseBraceExpected": "要么是少了右大括号，要么是哪里左大括号没写。",
+      "CloseBracketExpected": "要么是少了右中括号，要么是哪里左中括号没写。",
+      "EndOfFileExpected": "JSON已经结束了，怎么后面还有东西？",
+      "InvalidCommentToken": "此处不允许注释！",
+      "UnexpectedEndOfComment": "“*/”呢？",
+      "UnexpectedEndOfString": "这字符串怎么回事？",
+      "UnexpectedEndOfNumber": "这数字怎么回事？",
+      "InvalidUnicode": "无效的Unicode转义字符。",
+      "InvalidEscapeCharacter": "无效的转义字符。",
+      "InvalidCharacter": "控制字符不应出现在此处。",
+      "UnknownParseError": "好像这里JSON解析失败了。"
+    },
+    "validateError": {
+      "type": {
+        "string": "这里应该是字符串。",
+        "number": "这里应该是数字。",
+        "integer": "这里应该是整数。",
+        "boolean": "这里应该是布尔值。",
+        "null": "这里应该是 null。",
+        "object": "这里应该是一个对象。",
+        "array": "这里应该是一个数组。"
+      },
+      "false schema": "此处不应有值。",
+      "additionalItems": "这个额外的元素 #{limit} 不满足条件。",
+      "items": "这个元素 #{limit} 不满足条件。",
+      "contains": {
+        "minimum": "这里需要至少有 {minContains} 个元素满足条件。",
+        "range": "这里需要至少有 {minContains} 个元素满足条件，但不能超过 {maxContains} 个元素。"
+      },
+      "additionalProperties": "这个额外的属性 {additionalProperty} 不满足条件。",
+      "dependencies": "这里缺少 {property} 所要求的依赖属性 {missingProperty}。",
+      "if": "由于 {failingKeyword} 中指定的条件未被满足，因此校验失败。",
+      "anyOf": "这里需要满足 anyOf 中任意一个条件。",
+      "oneOf": "这里必须且只能满足 oneOf 中任意一个条件。",
+      "not": "这里不能匹配 not 中的条件。",
+      "propertyNames": "属性名 {propertyName} 不满足条件。",
+      "minItems": "这里至少要有 {limit} 个元素。",
+      "maxItems": "这里最多只能有 {limit} 个元素。",
+      "minProperties": "这里至少要有 {limit} 个属性。",
+      "maxProperties": "这里最多只能有 {limit} 个属性。",
+      "minLength": "字符串长度必须大于等于 {limit} 个字符。",
+      "maxLength": "字符串长度必须小于等于 {limit} 个字符。",
+      "minimum": "这里的值不应小于 {limit}。",
+      "maximum": "这里的值不应大于 {limit}。",
+      "exclusiveMinimum": "这里的值不应小于等于 {limit}。",
+      "exclusiveMaximum": "这里的值不应大于等于 {limit}。",
+      "multipleOf": "这里的值只能是 {multipleOf} 的整数倍。",
+      "pattern": "这里的值不满足正则表达式 {pattern}。",
+      "required": "这里缺少属性 {missingProperty}。",
+      "uniqueItems": "这里不应出现重复的元素（第 {j} 项与第 {i} 项重复）。",
+      "const": "这里应该是固定值 {allowedValue}。",
+      "enum": "这里只能是以下值之一：{allowedValues}。",
+      "format": "这里需要匹配 {format} 格式。",
+      "unevaluatedProperties": "这个未校验过的属性 {unevaluatedProperty} 不满足条件。",
+      "unevaluatedItems": "这个未校验过的元素 #{limit} 不满足条件。",
+      "dependentRequired": "这里缺少 {property} 所要求的依赖属性 {missingProperty}。",
+      "discriminator": {
+        "tag": "用于条件校验的属性 {tag} 应该是字符串。",
+        "mapping": "没有与条件校验属性 {tag} 的值 {tagValue} 关联的校验分支。"
+      }
+    },
+    "jsonType": {
+      "string": "字符串",
+      "number": "数字",
+      "integer": "整数",
+      "boolean": "布尔值",
+      "null": "空（null）",
+      "object": "对象",
+      "array": "数组"
+    },
+    "misc": {
+      "InvalidRootElement": "JSON的根元素应当是对象或数组。",
+      "DuplicateObjectKey": "对象的键不应出现重复。",
+      "InvalidSchema": "JSON Schema 似乎无效或无法加载。"
+    }
+  }
+}
